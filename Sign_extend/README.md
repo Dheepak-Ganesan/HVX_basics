@@ -13,7 +13,7 @@
 
  2. Q6_R_sxth_R (Sign-Extend Half-Word):
 
-    **Purpose: **Extends the least significant half-word (16 bits) of a value to a 32-bit result.
+    **Purpose:** Extends the least significant half-word (16 bits) of a value to a 32-bit result.
     **How it works:** Similar to byte extension, it copies the most significant bit of the 16-bit value into the higher bits of the result to preserve the sign.
 
     **Example:**
