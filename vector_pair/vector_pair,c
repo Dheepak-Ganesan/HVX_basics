@@ -1,0 +1,23 @@
+#include <hvx_hexagon_protos.h>
+#include <hexagon_protos.h>
+#include <hexagon_types.h>
+#include <stdio.h>
+
+int main()
+{
+    HVX_Vector v1 = (HVX_Vector) {0x1, 0x2, 0x3, 0x4, 0x5, 0x6, 0x7, 0x8, 0x9, 0xA, 0xB, 0xC, 0xD, 0xE, 0xF, 0x10};
+    HVX_Vector v2 = (HVX_Vector) {0x11, 0x12, 0x13, 0x14, 0x15, 0x16, 0x17, 0x18, 0x19, 0x1A, 0x1B, 0x1C, 0x1D, 0x1E, 0x1F, 0x20};
+
+    HVX_VectorPair v_combined = Q6_W_vcombine_VV(v1, v2);
+
+    
+    unsigned int *v_ptr = (unsigned int *)&v_combined;
+
+    printf("Vector v1 and v2 elements:\n");
+    for (int i = 0; i < 32; i++) 
+    { 
+        printf("v[%d] = %x\n", i, v_ptr[i]);  // 32 elements (16 from v1 and 16 from v2)
+    }
+
+    return 0;
+}
