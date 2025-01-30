@@ -3,6 +3,7 @@ This function returns the absolute value of a signed 32-bit integer.
 
 Commands:
 $hexagon-clang -mhvx -mv73 -o absvalue absvalue.c
+
 hexagon-sim absvalue
 
 Dependencies: Hexagon SDK must be downloaded in order to compile the code.
