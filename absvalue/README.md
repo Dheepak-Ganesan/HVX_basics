@@ -2,7 +2,7 @@ The operation performed is calculating the absolute value of two integers (num1 
 This function returns the absolute value of a signed 32-bit integer.
 
 Commands:
-$hexagon-clang -mhvx -mv73 -o absvalue absvalue.c
+$hexagon-clang -mhvx -mv73 -DLOG2VLEN=7 absvalue.c -o absvalue
 
 hexagon-sim absvalue
 
