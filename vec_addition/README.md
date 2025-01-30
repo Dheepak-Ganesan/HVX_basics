@@ -4,5 +4,7 @@ The intrinsic Q6_Vw_vadd_VwVw adds each corresponding element of v1 and v2, resu
 Commands:
 $ hexagon-clang -mhvx -mv73 -DLOG2VLEN=7 vec_addition.c -o vec_addition
 
+$ hexagon-sim vec_addition
+
 
 Dependencies: Hexagon SDK must be downloaded in order to compile the code.
