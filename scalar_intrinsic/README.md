@@ -1,2 +1,1 @@
-The program uses Hexagon-specific intrinsic functions,
-(Q6_R_add_RR, Q6_R_sub_RR, Q6_R_abs_R, Q6_R_and_RR, Q6_R_or_RR, Q6_R_xor_RR, Q6_R_min_RR, and Q6_R_max_RR) to perform these operations efficiently on Hexagon DSP registers
+The program uses Hexagon-specific intrinsic functions,(Q6_R_add_RR, Q6_R_sub_RR, Q6_R_abs_R, Q6_R_and_RR, Q6_R_or_RR, Q6_R_xor_RR, Q6_R_min_RR, and Q6_R_max_RR) to perform the operations efficiently on Hexagon DSP registers
